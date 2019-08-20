@@ -3,36 +3,32 @@ window.cipher = {
     decode: decode
 }
 
-function encode(){
-  let offset = Number(document.getElementById('offset').value);
-  let message = String(document.getElementById('text').value);
-  let arr = [];          // cod ASCII da mensagem
-  let arrCifra = []     //mensagem cifrada transformada em string
-
-
+function encode(offset, message){
+  const arr = [];          // array dos cod ASCII da mensagem
+  const arrCifra = []     //array com as letras da mensagem cifrada
     for(let i=0, length = message.length;i<length;i++){
-      arr.push(((message.charCodeAt(i) - 65 + offset)%26)+65)
-      arrCifra.push(String.fromCharCode(arr[i]))
-      }
-
-    document.getElementById('result').innerHTML =
-    `<p> Codigo: ${arrCifra.join("")} </p>`
-
+      if(message.charCodeAt(i) < 65 || message.charCodeAt(i) > 90){   // se ASCII NÃO está dentro da faixa de 65-90
+        arr.push(message.charCodeAt(i))         // coloca na array o mesmo codigo ASCII
+        arrCifra.push(String.fromCharCode(arr[i]));   // a string não sofre alteração
+      } else{
+          arr.push(((message.charCodeAt(i) - 65 + offset)%26)+65)
+          arrCifra.push(String.fromCharCode(arr[i]))
+          }
+    }
+      return arrCifra.join("")
   }
 
-function decode(){
-  let offset = Number(document.getElementById('offset').value);
-  let message = String(document.getElementById('text').value);
-  let arr = [];       // cod ASCII da mensagem
-  let arrCifra = []   //mensagem cifrada transformada em string
-  let i=0;
-
-  for(let i=0, length = message.length;i<length;i++){
-    arr.push(((message.charCodeAt(i) + 65 - offset)%26)+65)
-    arrCifra.push(String.fromCharCode(arr[i]))
+function decode(offset, message){
+  const arr = [];          // array dos cod ASCII da mensagem
+  const arrCifra = []     //array com as letras da mensagem cifrada
+    for(let i=0, length = message.length;i<length;i++){
+      if(message.charCodeAt(i) < 65 || message.charCodeAt(i) > 90){   // se ASCII NÃO está dentro da faixa de 65-90
+        arr.push(message.charCodeAt(i))         // coloca na array o mesmo codigo ASCII
+        arrCifra.push(String.fromCharCode(arr[i]));   // a string não sofre alteração
+      } else{
+        arr.push(((message.charCodeAt(i) + 65 - offset)%26)+65)
+      arrCifra.push(String.fromCharCode(arr[i]))
+      }
     }
-
-    document.getElementById('result').innerHTML =
-    `<p> Decifrado: ${arrCifra.join("")} </p>`
-
+      return arrCifra.join("")
 }
