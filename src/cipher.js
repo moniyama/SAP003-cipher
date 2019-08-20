@@ -17,7 +17,10 @@ function encode(){
       i++}
     while(i<length);
 
-    console.log(arrCifra.join(""))
+    document.getElementById('result').innerHTML =
+    `<p> Codigo: ${arrCifra.join("")} </p>`
+    console.log(arr)
+    console.log(arrCifra)
   }
 
 function decode(){
@@ -29,10 +32,13 @@ function decode(){
   let i=0;
 
     do{
-      arr.push(((message.charCodeAt(i) - 65 - offset)%26)+65)
+      arr.push(((message.charCodeAt(i) + 65 - offset) % 26)+65)
       arrCifra.push(String.fromCharCode(arr[i]))
       i++}
     while(i<length);
 
-    console.log(arrCifra.join(""))
+    document.getElementById('result').innerHTML =
+    `<p> Decifrado: ${arrCifra.join("")} </p>`
+    console.log(arr)
+    console.log(arrCifra)
 }
