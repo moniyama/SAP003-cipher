@@ -7,8 +7,21 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Secret Message</h1>
     </div>
+
+    <form>
+        <p> Escolha um grau de deslocamento:
+        <input type="number" id="offset" placeholder="Numero"> </p>
+
+        <p> Codificar a mensagem:
+        <input type="text" id="text" placeholder="Mensagem"></p>
+        <p><input type='button' name="mybtn" value="Codificar" onclick="btnEncode()">
+        <input type='button' name="mybtn" value="Decifrar" onclick="btnDecode()"></p>
+      </form>
+
+      <p id = "result"></p>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
