@@ -1,6 +1,46 @@
 html{
   background-color: gray;
+  padding: 10px;
+  margin:auto;
 }
 h1{
+text-align: center;
+}
+body{
+  padding: 10px 20px;
+  font-size: 20px;
+}
+#textResult{
+  text-align: center;
+  padding: 12px 20px;
+  background-color:white;
+  width: 20em;
+  height: 5em;
+}
+#offset{
+  width: 5em;
+  padding: 10px 5px;
+}
 
+#text{
+  width: 20em;
+  height: 5em;
+}
+
+#infoBox{
+  display: inline-block;
+  background-color: white;
+}
+
+.mybtn{
+  background-color: #e7e7e7;
+  border-radius: 8px;
+  font-size: 24px;
+  transition-duration: 0.4s;
+  width: 150px;
+  height: 50px;
+}
+.mybtn:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
 }

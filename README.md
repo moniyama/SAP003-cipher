@@ -1,96 +1,35 @@
-# Cifra de César
+##### MMESSENGER #####
+1. DEFINIÇÃO
 
-## Índice
+A MMESSENGER foi feita para realizar uma comunicação secreta, e é destinada para qualquer público.
 
-* [1. Prefácio](#1-prefácio)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do
-  projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Avaliação](#8-avaliação)
-* [9. Guias, dicas e leituras
-  complementares](#9-guias-dicas-e-leituras-complementares)
-* [10. Checklist](#10-checklist)
+Quer marcar um local de encontro secreto?  
+Dar uma novidade especial ou se declarar, de um modo inusitado?
+Enviar mensagens picantes?
 
-***
+A MMESSENGER codifica a sua mensagem e somente poderá ser entendida com a chave criada. A chave deve ser enviada apenas ao usuário receptor, destinatário da Mensagem.
 
-## 1. Prefácio
+2. FUNCIONAMENTO
+- O usuário emissor deve escolher uma chave e escrever uma mensagem;
+- A MMESSENGER codificará mensagem através da chave escolhida (grau de deslocamento) e criará a mensagem codificada;
+- O usuário emissor deve copiar a mensagem codificada e enviá-la para o usuário receptor, informando a chave.
+- Com a mesma chave, o usuário receptor consegue decodificar a mensagem recebida.
 
-Cifrar significa codificar. A [cifra de
-César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar) é um dos primeiros
-tipos de criptografias conhecidas na história. O imperador romano Júlio César
-utilizava essa cifra para enviar ordens secretas aos seus generais no campo de
-batalha.
+Na versão atual, a Secret Message ainda não codifica números ou caracteres especiais, sendo, portanto mantidos no código.
 
-![caeser-cipher](https://user-images.githubusercontent.com/11894994/60990999-07ffdb00-a320-11e9-87d0-b7c291bc4cd1.png)
+##########
 
-A cifra de César é uma das técnicas mais simples de cifrar uma mensagem. É um
-tipo de cifra por substituição, em que cada letra do texto original é
-substituida por outra que se encontra há um número fixo de posições
-(deslocamento) mais a frente do mesmo alfabeto.
 
-Por exemplo se usarmos o deslocamento (_offset_) de 3 posições:
 
-* Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto com cifra:  D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
-* A letra A será D
-* A palavra CASA será FDVD
 
-Atualmente todas as cifras de substituição alfabética simples, são decifradas
-com facilidade e não oferecem muita segurança na comunição, mas a cifra de César
-muitas vezes pode fazer parte de um sistema mais complexo de criptografia, como
-a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
-## 2. Resumo do projeto
 
-O que eu tenho que fazer exatamente? Neste projeto você criará a primeira
-aplicação web do _bootcamp_. Nela o usuário poderá cifrar e decrifrar um texto
-indicando a chave de deslocamento (_offset_).
 
-O tema é livre. Você deve pensar em alguma situação de vida real em que seja
-necessário cifrar uma mensagem e pensar em como deve ser a experiência do
-usuário (tela, explicações, mensagens, cores, marca?, etc.). Algumas ideias de
-exemplo:
 
-* Mensagens secretas para alguma pessoa.
-* Ferramenta de mensagens internas de uma organização em uma zona de conflito.
-* Cifrar cartões de crédito.
-* Criar senhas seguras para email.
+Na página principal, o usuário deve colocar um número como chave, que será o grau de deslocamento da cifra do código.
 
-## 3. Objetivos de aprendizagem
 
-Neste projeto você aprenderá a construir uma aplicação web que interaja com o
-usuário através do navegador e a lógica para essa interação. Em outras palavras,
-você aprenderá:
-
-* Desenhar elementos de formulário em uma tela usando **HTML** e **CSS**.
-* Permitir o usuário interagir com elementos do DOM e fazer com que a aplicação
-  responda (cifrar/decifrar) quando ocorrer os **eventos de DOM**.
-* Manipular _strings_ (cadeias de texto).
-* Usar **controle de fluxo** (laços, condicionais, ...).
-* Atualizar a tela com os resultados (**manipular o DOM**).
-* **Implementar funções** dada uma descrição de comportamento.
-* Verificar a sua implementação com **provas unitárias**.
-* Entender as **necessidades do usuário** e propor soluções.
-* Organizar o seu tempo e priorizar tarefas em um ambiente de **alta
-  incerteza**.
-
-## 4. Considerações gerais
-
-* Este projeto deve ser resolvido individualmente.
-* O projeto será entregue subindo o seu código no GitHub (commit/push) e o
-  deploy será feito no GitHub Pages. Se não sabe o que é o GitHub, não se
-  preocupe, você aprendera durante o projeto.
-* Tempo para completar: tempo referência 2 semanas.
-
-## 5. Critérios de aceitação mínimos do projeto
-
-Use o alfabeto simples (somente maiúsculas e sem ç):
-
-* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+o index.js
 
 ### Definição do produto
 
