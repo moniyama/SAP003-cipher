@@ -1,5 +1,5 @@
 html{
-  background-color: #CC88B0;
+  background-color: #89A063;
   padding: 10px;
   margin:auto;
 }
@@ -9,22 +9,26 @@ text-align: center;
 body{
   padding: 10px 20px;
   font-size: 20px;
+  text-align: center;
 }
 
 form{
-    background-color: #CF8A94;
+    background-color: #ACC08C;
     padding: inherit;
+    text-align: center;
+    display: inline-block;
 }
-#textResult{
+
+span{
   text-align: center;
-  padding: 12px 20px;
-  background-color:white;
-  width: 20em;
-  height: 5em;
 }
+
 #offset{
   width: 5em;
   padding: 10px 5px;
+}
+#result{
+  text-align: center;
 }
 
 textarea{
@@ -32,12 +36,18 @@ textarea{
   height: 5em;
   padding: 10px 5px;
   resize: none;
+  background-color:white;
+}
+
+#textResult{
+  display: inline-block;
 }
 
 #infoBox{
-  display: inline-block;
-  background-color: #C785CA;
-
+  padding: 10px;
+  display: block;
+  background-color: #DAE8C4;
+  text-align: center;
 }
 
 .mybtn{
@@ -49,6 +59,6 @@ textarea{
   height: 50px;
 }
 .mybtn:hover {
-  background-color: #F78E21;
+  background-color: #698044;
   color: white;
 }

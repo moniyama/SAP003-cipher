@@ -10,23 +10,20 @@
       <h1>MMESSENGER</h1>
     </div>
 
-    <span id = "infoBox"><p>A MMESSENGER foi feita para realizar uma comunicação secreta, e é destinada para qualquer público!</p>
-    <p>A MMESSENGER codifica a sua mensagem e somente poderá ser entendida com a chave criada.
-      A chave deve ser enviada apenas ao usuário receptor, destinatário da Mensagem. </p></span>
+    <span id = "infoBox"><p>A MMESSENGER foi feita para realizar uma comunicação secreta e é destinada para qualquer público!</p>
+    <p> Codificamos a sua mensagem que somente poderá ser entendida com a chave criada
+    <p> A chave deve ser enviada apenas ao usuário receptor, destinatário da Mensagem. </p></span>
 
     <form>
       <div class = "desl">
         <p> Coloque uma chave:
         <input type="number" id="offset" placeholder="Numero" required> </p>
-      </div>
-      <div class = "msn">
-        <p> Digite a Mensagem:
-        <textarea id="text" placeholder="Mensagem" required></textarea>
-          <p><input type='button' class="mybtn" value="Codificar" onclick="btnEncode()">
-            <input type='button' class="mybtn" value="Decifrar" onclick="btnDecode()"></p>
+        <p> Digite a Mensagem:</p>
+        <textarea id="text" placeholder="Mensagem" ></textarea>
+          <p><button  type="button" id = "code" class="mybtn">Codificar</button>
+          <button  type="button" id = "decode" class="mybtn">Decifrar</button></p>
       </div>
     </form>
-
 
     <span><p id = "result"></p></span>
 
@@ -36,6 +33,6 @@
 
   </body>
   <footer>
-    by Me
+    by moniyama
   </footer>
 </html>
