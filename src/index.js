@@ -1,6 +1,6 @@
 function btnEncode() {
   let offset = Number(document.getElementById("offset").value);
-  let message = String(document.getElementById("text").value.toUpperCase());
+  let message = String(document.getElementById("text").value);
 
   if (offset === 0 || message === "" ) {
     alert("Preencha os campos para prosseguir!");
@@ -12,7 +12,7 @@ function btnEncode() {
 
 function btnDecode() {
   let offset = Number(document.getElementById("offset").value);
-  let message = String(document.getElementById("text").value.toUpperCase());
+  let message = String(document.getElementById("text").value);
 
   if (offset === 0 || message === "" ) {
     alert("Preencha os campos para prosseguir!");

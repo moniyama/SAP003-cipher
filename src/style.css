@@ -1,5 +1,5 @@
 html{
-  background-color: gray;
+  background-color: #CC88B0;
   padding: 10px;
   margin:auto;
 }
@@ -9,6 +9,11 @@ text-align: center;
 body{
   padding: 10px 20px;
   font-size: 20px;
+}
+
+form{
+    background-color: #CF8A94;
+    padding: inherit;
 }
 #textResult{
   text-align: center;
@@ -22,14 +27,17 @@ body{
   padding: 10px 5px;
 }
 
-#text{
+textarea{
   width: 20em;
   height: 5em;
+  padding: 10px 5px;
+  resize: none;
 }
 
 #infoBox{
   display: inline-block;
-  background-color: white;
+  background-color: #C785CA;
+
 }
 
 .mybtn{
@@ -41,6 +49,6 @@ body{
   height: 50px;
 }
 .mybtn:hover {
-  background-color: #4CAF50; /* Green */
+  background-color: #F78E21;
   color: white;
 }
