@@ -22,6 +22,7 @@ document.getElementById("decode").onclick = function btnDecode() {
     alert("Preencha os campos para prosseguir!");
   } else {
     document.getElementById("result").innerHTML =
-    `<p> Mensagem Decifrada: </p><textarea disabled id='textResult'>${window.cipher.decode(offset, message)}</textarea></p>`;
+    `<p> Mensagem Decifrada: </p><textarea disabled id='textResult'>${window.cipher.decode(offset, message)}</textarea>
+    <p> Envie uma mensagem de volta! </p>`;
   }
 };

@@ -1,34 +1,40 @@
 html{
   background-color: #89A063;
   padding: 10px;
-  margin:auto;
+  margin:center;
+}
+header{
+  margin-left: auto;
+  margin-right: auto;
 }
 h1{
-text-align: center;
+  text-align: center;
 }
+
 body{
   padding: 10px 20px;
   font-size: 20px;
+}
+
+#infoBox{
+  padding: 10px;
+  background-color: #DAE8C4;
   text-align: center;
+  width: 800px;
 }
 
 form{
     background-color: #ACC08C;
-    padding: inherit;
+    padding: 10px 20px;
     text-align: center;
     display: inline-block;
-}
-
-span{
-  text-align: center;
+    height: 310px;
+    width: 340px;
 }
 
 #offset{
   width: 5em;
   padding: 10px 5px;
-}
-#result{
-  text-align: center;
 }
 
 textarea{
@@ -37,17 +43,6 @@ textarea{
   padding: 10px 5px;
   resize: none;
   background-color:white;
-}
-
-#textResult{
-  display: inline-block;
-}
-
-#infoBox{
-  padding: 10px;
-  display: block;
-  background-color: #DAE8C4;
-  text-align: center;
 }
 
 .mybtn{
@@ -61,4 +56,24 @@ textarea{
 .mybtn:hover {
   background-color: #698044;
   color: white;
+}
+
+section{
+    position: absolute;
+    display: inline-block;
+    background-color: #ACC08C;
+    height: 310px;
+    width: 340px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#call{
+  text-align: right;
+}
+
+footer{
+  margin-top: 100px;
+  font-size: 15px;
+  text-align: center;
 }

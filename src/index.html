@@ -8,31 +8,31 @@
   <body>
     <div id="root">
       <h1>MMESSENGER</h1>
+      <p id=call> Te ajudamos a enviar aqueeeela mensagem secreta! <3 </p>
+
     </div>
 
-    <span id = "infoBox"><p>A MMESSENGER foi feita para realizar uma comunicação secreta e é destinada para qualquer público!</p>
-    <p> Codificamos a sua mensagem que somente poderá ser entendida com a chave criada
-    <p> A chave deve ser enviada apenas ao usuário receptor, destinatário da Mensagem. </p></span>
+  <header id = "infoBox"><p>Escolha um número de chave, escreva o que quiser e envie!</p>
+    <p> A <strong>CHAVE</strong> é o código para para decodificar a mensagem, portanto, mantenha-o <strong>SEGURO</strong></p>
+  </header>
 
+<div id="box">
     <form>
-      <div class = "desl">
         <p> Coloque uma chave:
         <input type="number" id="offset" placeholder="Numero" required> </p>
         <p> Digite a Mensagem:</p>
         <textarea id="text" placeholder="Mensagem" ></textarea>
           <p><button  type="button" id = "code" class="mybtn">Codificar</button>
           <button  type="button" id = "decode" class="mybtn">Decifrar</button></p>
-      </div>
     </form>
-
-    <span><p id = "result"></p></span>
+  <section>  <p id = "result"></p></section>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+</div>
 
-
-  </body>
   <footer>
     by moniyama
   </footer>
+    </body>
 </html>
