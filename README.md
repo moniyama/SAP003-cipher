@@ -15,7 +15,7 @@ Assim, a chave deve ser enviada apenas ao usuário receptor, destinatário da Me
 - Ao terminar, apertar o botão "Codificar";
 - A MMESSENGER codificará a mensagem através da chave escolhida (grau de deslocamento) e criará a mensagem codificada;
 - O usuário emissor deve copiar a mensagem codificada e enviá-la para o usuário receptor, informando a chave.
-- Com a mesma chave, o usuário receptor consegue decodificar a mensagem recebida, apertando o botão "Decodificar"
+- Com a mesma chave, o usuário receptor consegue decodificar a mensagem recebida, apertando o botão "Decifrar"
 
 OBS: Números ou caracteres especiais são mantidos quando codificados.
 
