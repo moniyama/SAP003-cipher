@@ -18,5 +18,6 @@ Assim, a chave deve ser enviada apenas ao usuário receptor, destinatário da Me
 - O usuário emissor deve copiar a mensagem codificada e enviá-la para o usuário receptor, informando a chave.
 - Com a mesma chave, o usuário receptor consegue decodificar a mensagem recebida, apertando o botão "Decifrar"
 
+
 *OBS: Números ou caracteres especiais são mantidos quando codificados.  
-OBS2: Trabalha apenas com offset positivo*
+OBS2: Trabalha apenas com grau de deslocamento positivo*
