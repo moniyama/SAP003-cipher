@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <main id="root">
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
       <h1>MMESSENGER</h1>
-      <h2 class = "sub" id="call"> Te ajudamos a enviar aqueeeela mensagem secreta! <3 </h2>
-    </header>
-    <section>
-        <header class="info" id = "info-Box"><p>Escolha um número de chave, escreva o que quiser e envie!</p>
-          <p> A <strong>CHAVE</strong> é o código para para decodificar a mensagem, portanto, mantenha-a <strong>SEGURA</strong></p>
-        </header>
-    </section>
-    <section class = "form" id="box">
-      <form>
-        <label> Coloque uma chave: </label>
-        <input type="number" id="offset" placeholder="Numero" required>
-        <p>Digite a Mensagem:</p>
-        <p><textarea id="text" placeholder="Mensagem" ></textarea></p>
-        <button type="button" id = "code" class="my-btn">Codificar</button>
-        <button type="button" id = "decode" class="my-btn">Decifrar</button>
-      </form>
-    </section>
-    <section>
-        <p id = "result"></p>
-    </section>
-
-  </main>
-      <footer>
-        by moniyama
-      </footer>
-      <script src="cipher.js"></script>
-      <script src="index.js"></script>
-    </body>
-    </html>
+      <h2 class="sub" id="call"> Te ajudamos a enviar aqueeeela mensagem secreta! <3 </h2>
+    </header> 
+    <main id="root">
+      <header class="info" id="info-Box">
+        <p>Escolha um número de chave, escreva o que quiser e envie!</p>
+        <p> A <strong>CHAVE</strong> é o código para para decodificar a mensagem, portanto, mantenha-a <strong>SEGURA</strong></p>
+      </header>
+      <section class="cipher">
+        <form class="boxes" id="box">
+            <label> Coloque uma chave: </label>
+            <input type="number" id="offset" placeholder="Numero" required>
+            <p>Digite a Mensagem:<br>
+              <textarea id="text" placeholder="Mensagem"></textarea></p>
+            <button type="button" id="code" class="my-btn">Codificar</button>
+            <button type="button" id="decode" class="my-btn">Decifrar</button>
+        </form>
+        <section class="boxes">
+          <p id="result"></p>
+        </section>
+      </section>
+    </main>
+    <footer>
+      by moniyama
+    </footer>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
