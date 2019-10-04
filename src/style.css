@@ -1,4 +1,6 @@
-
+html {
+  font-family: 'Merriweather', serif;
+}
 header {
   margin-left: auto;
   margin-right: auto;
@@ -10,8 +12,42 @@ header {
   font-size: 22px;
 }
 
+.navbar {
+  width: 88%;
+  background-color: #555;
+  overflow: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar ul li {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 22%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar ul li:hover {
+  background-color: #000;
+}
+
+.navbar ul li.active {
+  background-color: #4CAF50;
+}
+
+#home, #funcionamento, #contatos, #cifrar-decifrar {
+  display: none;
+}
+
+#funcionamento-cifra {
+  width: 60vw;
+}
+
 body {
-  padding: 30px 20px;
+  padding: 0px 30px;
   font-size: 20px;
   background-color: #89A063;
 }
@@ -30,7 +66,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 
 #offset {
   width: 5em;
@@ -70,4 +105,13 @@ footer {
   margin-top: 40px;
   font-size: 15px;
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar ul li {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
