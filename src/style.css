@@ -14,20 +14,22 @@ header {
 
 .navbar {
   width: 88%;
-  background-color: #555;
   overflow: auto;
   margin-right: auto;
   margin-left: auto;
+
 }
 
 .navbar ul li {
   float: left;
+  background-color: #555;
   padding: 12px;
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 22%; /* Four links of equal widths */
+  width: 20%; /* Four links of equal widths */
   text-align: center;
+  list-style-type: none
 }
 
 .navbar ul li:hover {
@@ -57,6 +59,7 @@ body {
   background-color: #DAE8C4;
   text-align: center;
   width: 80%;
+  margin: 20px auto;
 }
 
 .cipher {
