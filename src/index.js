@@ -31,7 +31,7 @@ function decide() {
   if (id == "code") {
     resultado.innerHTML =
     `<p> Envie o Código:</p><textarea disabled id='textResult'>${window.cipher.encode(+offset.value, message.value)}</textarea>
-    <p> Ah, não esqueça de enviar a chave para seu amigo: ${offset.value} </p>`;
+    <p> Não esqueça do número da chave: ${offset.value} </p>`;
   } else {
     resultado.innerHTML =
     `<p> Mensagem Decifrada: </p><textarea disabled id='textResult'>${window.cipher.decode(+offset.value, message.value)}</textarea>
