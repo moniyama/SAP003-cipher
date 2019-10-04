@@ -1,7 +1,7 @@
 html {
   font-family: 'Merriweather', serif;
 }
-header {
+.top-header {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -59,7 +59,7 @@ body {
   background-color: #DAE8C4;
   text-align: center;
   width: 80%;
-  margin: 20px auto;
+  margin: 1em auto;
 }
 
 .cipher {
