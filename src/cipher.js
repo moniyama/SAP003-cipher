@@ -4,7 +4,7 @@ window.cipher = {
 };
 
 function encode(offset, message) {
-  let arr; 
+  let arr;
   let arrCifra = "";
   for (let letter of message) {
     let letterCode = letter.charCodeAt(0);
@@ -13,7 +13,7 @@ function encode(offset, message) {
       arrCifra += String.fromCharCode(arr);
     } else {
       if (letterCode >= 97 && letterCode <= 122) {
-        arr = ((letterCode - 97 + offset) % 26) + 97; 
+        arr = ((letterCode - 97 + offset) % 26) + 97;
         arrCifra += String.fromCharCode(arr);
       } else {
         arrCifra += String.fromCharCode(letterCode);

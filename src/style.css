@@ -1,5 +1,5 @@
 html {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 .top-header {
   margin-left: auto;
@@ -13,11 +13,7 @@ html {
 }
 
 .navbar {
-  width: 88%;
   overflow: auto;
-  margin-right: auto;
-  margin-left: auto;
-
 }
 
 .navbar ul li {
@@ -27,9 +23,9 @@ html {
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 20%; /* Four links of equal widths */
+  width: 45%;
   text-align: center;
-  list-style-type: none
+  list-style-type: none;
 }
 
 .navbar ul li:hover {
@@ -37,11 +33,20 @@ html {
 }
 
 .navbar ul li.active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
-#home, #funcionamento, #contatos, #cifrar-decifrar {
+.seção {
+  margin: 0 5%;
+}
+
+#cifrar-decifrar {
   display: none;
+}
+
+#funcionamento {
+  display: block;
+  text-align: center;
 }
 
 #funcionamento-cifra {
@@ -51,19 +56,19 @@ html {
 body {
   padding: 0px 30px;
   font-size: 20px;
-  background-color: #89A063;
+  background-color: #89a063;
 }
 
 .info {
   padding: 10px;
-  background-color: #DAE8C4;
+  background-color: #dae8c4;
   text-align: center;
   width: 80%;
   margin: 1em auto;
 }
 
 .cipher {
-  background-color: #ACC08C;
+  background-color: #acc08c;
   padding: 10px;
   text-align: center;
   display: flex;
@@ -78,14 +83,14 @@ body {
 .boxes {
   width: 50%;
   padding: 15px;
-} 
+}
 
 textarea {
   width: 80%;
   height: 5em;
   padding: 10px 5px;
   resize: none;
-  background-color:white;
+  background-color: white;
   line-height: 1.8;
 }
 
@@ -96,7 +101,6 @@ textarea {
   transition-duration: 0.4s;
   width: 150px;
   height: 50px;
-
 }
 
 .my-btn:hover {

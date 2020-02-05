@@ -1,70 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div class='top-header'>
+      <div class="top-header">
         <h1>Cifra de César</h1>
-        <h2 class="sub" id="call"> Te ajudamos a enviar aqueeeela mensagem secreta! <code><3</code></h2>
+        <h2 class="sub" id="call">
+          Te ajudamos a enviar aqueeeela mensagem secreta! <code><3</code>
+        </h2>
       </div>
-    </header> 
-    <nav class="navbar">
-      <ul>
-        <li class="menu" data-target="home">Home</li>
-        <li class="menu" data-target="funcionamento" id="menu-funcionamento">Funcionamento</li>
-        <li class="menu" data-target="cifrar-decifrar">Enviar Mensagem</li>
-        <li class="menu" data-target="contatos">Contatos</li>
-      </ul>
-    </nav>
+    </header>
     <main id="main">
-      <section class ="seção" id="home"> 
-        <h3>Olá! Sejam bem vindxs!</h3>
-        <p>Você já criou códigos para conversar secretamente com seus amigos? Quer enviar mensagens secretas? </p> 
-        <p>Se voce já conhece a Cifra de César, sinta-se a vontade para enviar mensagens codificadas! <br> 
-        Se você nunca ouviu falar... também!<br>Mas caso queira conhecer um pouquinho sobre como esse código funciona, só clicar em <a href="#funcionamento">Funcionamento</a>  
-        </p>  
-      </section>
-      <section class ="seção" id="funcionamento">
+      <nav class="navbar">
+        <ul>
+          <li class="menu" data-target="funcionamento" id="menu-funcionamento">
+            Funcionamento
+          </li>
+          <li class="menu" data-target="cifrar-decifrar">Enviar Mensagem</li>
+        </ul>
+      </nav>
+      <section class="seção" id="funcionamento">
         <h3>O que é essa tal Cifra de César?</h3>
-        <p> A cifra de César é uma das técnicas mais simples de cifrar uma mensagem, sendo um dos primeiros tipos de criptografias conhecidas na história.<br>
-        O imperador romano Júlio César utilizava dessa técnica para enviar ordens secretas aos seus generais no campo de batalha. <br>
+        <p>
+          A cifra de César é uma das técnicas mais simples de cifrar uma
+          mensagem, sendo um dos primeiros tipos de criptografias conhecidas na
+          história.<br />
+          O imperador romano Júlio César utilizava dessa técnica para enviar
+          ordens secretas aos seus generais no campo de batalha. <br />
         </p>
-        <p> A cifra funciona por substituição, ou seja, cada letra do texto original é substituida por outra que se encontra há um número fixo de posições (deslocamento) mais a frente do mesmo alfabeto.</p>
+        <p>
+          A cifra funciona por substituição, ou seja, cada letra do texto
+          original é substituida por outra que se encontra há um número fixo de
+          posições (deslocamento) mais a frente do mesmo alfabeto.
+        </p>
         <figure>
-          <img id="funcionamento-cifra"src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/1920px-Caesar3.svg.png">
-          <figcaption>Cifra de César</figcaption> 
+          <img
+            id="funcionamento-cifra"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/1920px-Caesar3.svg.png"
+          />
+          <figcaption>Cifra de César</figcaption>
         </figure>
-        <p> Por exemplo se usarmos o deslocamento (offset) de 3 posições:<br>
-        Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br>
-        Alfabeto com cifra: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C  <br>
-        A letra A será D, e palavra CASA será FDVD. </p>
-        <p>Atualmente todas as cifras de substituição alfabética simples, são decifradas com facilidade e não oferecem muita segurança na comunição, mas a cifra de César muitas vezes pode fazer parte de um sistema mais complexo de criptografia, como a cifra de Vigenère, e tem aplicação no sistema ROT13.</p>
+        <p>
+          Por exemplo se usarmos o deslocamento (offset) de 3 posições:<br />
+          Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y
+          Z <br />
+          Alfabeto com cifra: D E F G H I J K L M N O P Q R S T U V W X Y Z A B
+          C <br />
+          A letra A será D, e palavra CASA será FDVD.
+        </p>
+        <p>
+          Atualmente todas as cifras de substituição alfabética simples, são
+          decifradas com facilidade e não oferecem muita segurança na comunição,
+          mas a cifra de César muitas vezes pode fazer parte de um sistema mais
+          complexo de criptografia, como a cifra de Vigenère, e tem aplicação no
+          sistema ROT13.
+        </p>
       </section>
-      <section class ="seção" id="contatos"></section>
-      <section class ="seção" id="cifrar-decifrar">
+      <section class="seção" id="cifrar-decifrar">
         <header class="info" id="info-Box">
-          <p>É a sua vez de testar! <br> Escolha um número de chave, escreva o que quiser e envie para alguém!</p>
-          <p> Lembre-se, a <strong>CHAVE</strong> é o código para decodificar a mensagem, portanto, mantenha-a <strong>SEGURA</strong>, e não esqueça de fornecê-la!</p>
+          <p>
+            Lembre-se, a <strong>CHAVE</strong> é o código para decodificar a
+            mensagem, portanto, mantenha-a <strong>SEGURA</strong>, e não
+            esqueça de fornecê-la!
+          </p>
+          <p>A chave deve ser um número maior que zero!</p>
         </header>
         <section class="cipher">
           <form class="boxes" id="box">
-              <label> Coloque uma chave: </label>
-              <input type="number" id="offset" placeholder="Numero" required>
-              <p>Digite a Mensagem:<br>
-                <textarea id="text" placeholder="Mensagem"></textarea></p>
-              <button type="button" id="code" class="my-btn">Codificar</button>
-              <button type="button" id="decode" class="my-btn">Decifrar</button>
+            <label> Coloque uma chave: </label>
+            <input type="number" id="offset" placeholder="Numero" required />
+            <p>
+              Digite a Mensagem:<br />
+              <textarea id="text" placeholder="Mensagem"></textarea>
+            </p>
+            <button type="button" id="code" class="my-btn">Codificar</button>
+            <button type="button" id="decode" class="my-btn">Decifrar</button>
           </form>
           <section class="boxes">
             <p id="result"></p>
           </section>
         </section>
-      </section>  
+      </section>
     </main>
     <footer>
       by moniyama
